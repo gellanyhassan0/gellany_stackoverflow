@@ -8,7 +8,7 @@ class gellany_stackoverflow():
 
     def sha256(self):
 
-       #https://stackoverflow.com/a/72667675
+       #https://stackoverflow.com/a/72667770/19362910
 
        import hashlib
          
