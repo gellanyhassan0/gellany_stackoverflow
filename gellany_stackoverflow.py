@@ -8,8 +8,10 @@ class gellany_stackoverflow():
 
     def sha256(self):
 
+       #https://stackoverflow.com/a/72667675/19362910
+
        import hashlib
-         #with open("text.txt", "rb") as f: #for int_bytes in f:
+         
        try:
            for f in range(0,10):
 
