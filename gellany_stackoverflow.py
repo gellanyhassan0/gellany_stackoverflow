@@ -1,9 +1,10 @@
 class gellany_stackoverflow():
     
 # init method or constructor
-    def __init__(self, file = None):
+    def __init__(self, file = None, string = None):
                   
                  self.file = file
+                 self.string = string
           
 
     def sha256(self):
@@ -27,6 +28,37 @@ class gellany_stackoverflow():
                    print(int_bytes)
                    readable_hash = hashlib.sha256(int_bytes).hexdigest()
                    print(readable_hash)
+                
+    def string_nospace(self):
+            
+            #https://stackoverflow.com/a/72675960/19362910
+            
+            s = self.string
+            i = 0
+            sample = []
+            for i in range(0, len(s), 1):
+
+                          try :
+                             a = s[i:i+3]
+                             b = s[i:i+4]
+                             c = s[i:i+5]
+                             d = s[i:i+6]
+
+
+                             sample.append(a)
+                             sample.append(b)
+                             sample.append(c) 
+                             sample.append(d)
+
+
+
+                          except Exception:
+                                          pass
+
+            for number in sample :
+               if sample.count(number) > 1 and number in ["red", "blue", "green", "yellow"]:
+                           print(number)
+   
 
 
 
