@@ -80,7 +80,7 @@ class gellany_stackoverflow():
                df = pd.read_csv(io.StringIO(TESTDATA), names=colnames)
                print(df) 
    
-def fizzBuzz(self):
+    def fizzBuzz(self):
                 n = self.number
                 for i in range(1,n+1):
                         if i % 3 == 0 and i % 5 == 0:
@@ -93,7 +93,21 @@ def fizzBuzz(self):
                             print(i)
 
 
-           
+    
+    def reverse_words_order_and_swap_cases(self):
+        newstring ='' 
+        for a in self.sentence:
+             if (a.isupper()) == True:
+                newstring += (a.lower())
+             elif (a.islower()) == True:
+                newstring += (a.upper())
+             elif (a.isspace()) == True:
+                newstring += a 
+        #print(newstring)        
+
+        string = newstring.split()
+        words = list(reversed(string))
+        print(" ".join(words))       
 
 
 gellany_stackoverflow().sha256()
