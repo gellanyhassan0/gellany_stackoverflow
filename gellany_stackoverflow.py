@@ -60,7 +60,9 @@ class gellany_stackoverflow():
                            print(number)
                     
     def stringtocsv(self):
-        
+               
+               #https://stackoverflow.com/questions/72682079/read-txt-file-into-pandas-dataframe
+                
                import csv
                import pandas as pd
                import io
