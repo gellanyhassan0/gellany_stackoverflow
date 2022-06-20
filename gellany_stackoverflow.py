@@ -1,10 +1,11 @@
 class gellany_stackoverflow():
     
 # init method or constructor
-    def __init__(self, file = None, string = None):
+    def __init__(self, file = None, string = None, number = None):
                   
                  self.file = file
                  self.string = string
+                 self.number = number
           
 
     def sha256(self):
@@ -79,7 +80,20 @@ class gellany_stackoverflow():
                df = pd.read_csv(io.StringIO(TESTDATA), names=colnames)
                print(df) 
    
+def fizzBuzz(self):
+                n = self.number
+                for i in range(1,n+1):
+                        if i % 3 == 0 and i % 5 == 0:
+                            print("FizzBuzz")
+                        elif i % 3 == 0 and i % 5 != 0:
+                            print("Fizz")
+                        elif i % 5 == 0 and i % 3 != 0:
+                            print("Buzz")
+                        else:
+                            print(i)
 
+
+           
 
 
 gellany_stackoverflow().sha256()
