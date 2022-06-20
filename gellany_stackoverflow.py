@@ -58,6 +58,24 @@ class gellany_stackoverflow():
             for number in sample :
                if sample.count(number) > 1 and number in ["red", "blue", "green", "yellow"]:
                            print(number)
+                    
+    def stringtocsv(self):
+        
+               import csv
+               import pandas as pd
+               import io
+
+               colnames = ['time', 'name', 'id', 'password']
+
+               file = open(self.file)
+               lines = file.read()
+               print(lines)
+               new_line = lines.replace('"name":', ',').replace('"id":', ',').replace('"password":', ',').replace(' ,', '').replace(' {', '').replace('}', '')
+               print(new_line)
+
+               TESTDATA= new_line
+               df = pd.read_csv(io.StringIO(TESTDATA), names=colnames)
+               print(df) 
    
 
 
