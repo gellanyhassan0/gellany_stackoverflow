@@ -1,11 +1,12 @@
 class gellany_stackoverflow():
     
 # init method or constructor
-    def __init__(self, file = None, string = None, number = None):
+    def __init__(self, file = None, string = None, number = None, n = None):
                   
                  self.file = file
                  self.string = string
                  self.number = number
+                 self.n = n
           
 
     def sha256(self):
@@ -108,7 +109,21 @@ class gellany_stackoverflow():
         string = newstring.split()
         words = list(reversed(string))
         print(" ".join(words))       
+    
+    def nested_input(self):
+        n = self.n
+        list_score = []
+        list_final = []
+        for x in range(0,n):
+                name = input()
+                score = float(input())
+                list_score.append(score)
+                list_final.append([name, score])
 
-
+        second_score = sorted(set(list_score))[1]
+        for i in (sorted(list_final)):
+            if second_score in i:
+                print(i[0])
+                
 gellany_stackoverflow().sha256()
 gellany_stackoverflow(file = 'text.txt').sha256()
