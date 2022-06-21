@@ -152,6 +152,21 @@ class gellany_stackoverflow():
                 average.append(sum(lst)/3)
 
         print("%.2f" % (average)[0])            
-                
+      
+    def regex_valid(self):
+        
+    import re
+    for _ in range(self.n):
+        try:
+            re.compile(input())
+            Output = True
+        except re.error:
+            Output = False
+        
+        print(Output)      
+    
+    
+    
+    
 gellany_stackoverflow().sha256()
 gellany_stackoverflow(file = 'text.txt').sha256()
