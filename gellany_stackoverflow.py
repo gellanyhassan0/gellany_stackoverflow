@@ -96,14 +96,21 @@ class gellany_stackoverflow():
 
     
     def reverse_words_order_and_swap_cases(self):
+        sentence = self.sentence
         newstring ='' 
-        for a in self.sentence:
-             if (a.isupper()) == True:
+        for a in sentence:
+             if (a.isupper()) == True :
                 newstring += (a.lower())
-             elif (a.islower()) == True:
+             elif (a.islower()) == True :
                 newstring += (a.upper())
-             elif (a.isspace()) == True:
+             elif (a.isspace()) == True :
                 newstring += a 
+             elif (a.isnumeric()) == True:
+                newstring += a
+             elif a == '"' or a == '.' :
+                newstring += a
+             else:
+                 newstring += a
         #print(newstring)        
 
         string = newstring.split()
