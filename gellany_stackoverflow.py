@@ -125,5 +125,26 @@ class gellany_stackoverflow():
             if second_score in i:
                 print(i[0])
                 
+                
+    def mean_input(self):
+
+        n = self.n
+        
+        name = []
+        for a in range(0,n+1):
+                        name.append(input().split())
+        #print(name)
+        #print(''.join(name[-1]))
+        last = ''.join(name[-1])
+        average = []
+
+        for i,sl in enumerate(name):
+            if last in sl :
+                #print(sl)
+                lst = [float(z) for z in sl[1:4]]
+                average.append(sum(lst)/3)
+
+        print("%.2f" % (average)[0])            
+                
 gellany_stackoverflow().sha256()
 gellany_stackoverflow(file = 'text.txt').sha256()
