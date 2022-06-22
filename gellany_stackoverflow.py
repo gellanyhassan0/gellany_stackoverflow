@@ -1,12 +1,13 @@
 class gellany_stackoverflow():
     
 # init method or constructor
-    def __init__(self, file = None, string = None, number = None, n = None):
+    def __init__(self, file = None, string = None, number = None, n = None, input = None):
                   
                  self.file = file
                  self.string = string
                  self.number = number
                  self.n = n
+                 self.input = input
           
 
     def sha256(self):
@@ -155,16 +156,23 @@ class gellany_stackoverflow():
       
     def regex_valid(self):
         
-    import re
-    for _ in range(self.n):
-        try:
-            re.compile(input())
-            Output = True
-        except re.error:
-            Output = False
-        
-        print(Output)      
+        import re
+        for _ in range(self.n):
+            try:
+                re.compile(input())
+                Output = True
+            except re.error:
+                Output = False
+
+            print(Output)      
     
+    def email_slicer(self):
+        
+        email = self.input.strip()
+        username = email[:email.index('@')]
+        domain = email[email.index('@') + 1:]
+
+        print(f"Your username is {username} & domain is {domain}")
     
     
     
