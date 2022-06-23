@@ -173,8 +173,24 @@ class gellany_stackoverflow():
         domain = email[email.index('@') + 1:]
 
         print(f"Your username is {username} & domain is {domain}")
+        
     
-    
+    def miniMaxSum(self):
+            import math
+            import os
+            import random
+            import re
+            import sys
+            arr = list(map(int, input().rstrip().split()))
+            arr = sorted(arr)
+            x = 0
+            y = 0
+            for i in arr[0:-1]:
+               x += i
+            for i in arr[1:]:
+                y += i
+            print(x, y)
+
     
 gellany_stackoverflow().sha256()
 gellany_stackoverflow(file = 'text.txt').sha256()
