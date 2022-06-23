@@ -166,22 +166,6 @@ class gellany_stackoverflow():
 
             print(Output)      
     
-    def email_slicer(self):
-        
-        #1st - validation regex as email 
-        import re
-        n = int(input())
-        for i in range(0,n): 
-            s = input()
-            a = re.search(r'<[a-zA-Z][\w\.-]*@[a-zA-Z]*\.[a-zA-Z]{1,3}>', s)
-            if bool(a):
-                print(s)
-        #2nd - grep regex before and after @ 
-        email = self.input.strip()
-        username = email[:email.index('@')]
-        domain = email[email.index('@') + 1:]
-
-        print(f"Your username is {username} & domain is {domain}")
         
     
     def miniMaxSum(self):
