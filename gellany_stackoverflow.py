@@ -183,6 +183,26 @@ class gellany_stackoverflow():
             for i in arr[1:]:
                 y += i
             print(x, y)
+            
+    def score_words(words):
+    
+    score = 0
+    arr = ['a', 'e', 'i', 'o', 'u', 'y']
+    #print(words)
+    for word in words:
+         even_word = ""
+         #print(word)
+         for i in word:
+              if i in arr :
+                  even_word +=i
+         if len(even_word) % 2 == 0:
+            #print(even_word)
+            score +=2
+         else:
+            score +=1
+                
+    return score     
+      
 
     
 gellany_stackoverflow().sha256()
