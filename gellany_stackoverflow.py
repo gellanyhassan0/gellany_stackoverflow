@@ -223,6 +223,17 @@ class gellany_stackoverflow():
                 print("Yes")
             else:
                 print("No")        # Writing output to STDOUT
+                
+      def split_houses(self):
+        
+            number = int(self.input)
+            live = self.input
+
+            if number >= 1 and number <= 20 and len(live) == number and not "HH" in live :
+                print("YES")
+                print(live.replace(".","B"))
+            else :
+                print("NO")
 
     
 gellany_stackoverflow().sha256()
