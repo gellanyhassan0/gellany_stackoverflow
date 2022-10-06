@@ -249,6 +249,24 @@ class gellany_stackoverflow():
                    string += i.lower()
 
             print(string)
+            
+      def palindromic_String(self):
+        
+            name = input()   
+
+            upper = 0
+            lower = 0
+
+            for s in name :
+                if s.isupper() == True:
+                    upper += 1
+                else :
+                    lower += 1
+
+            if lower > 0  and name == name[::-1]:
+                print("YES")
+            else :
+                print("NO")
 
     
 gellany_stackoverflow().sha256()
