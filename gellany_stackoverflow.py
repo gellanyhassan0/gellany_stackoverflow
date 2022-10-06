@@ -234,6 +234,21 @@ class gellany_stackoverflow():
                 print(live.replace(".","B"))
             else :
                 print("NO")
+                
+                
+      def toggle_String(self) :
+        
+            name = self.input
+
+            string = ""
+
+            for i in name : 
+                if i.islower() == True :
+                   string += i.upper()   
+                else :
+                   string += i.lower()
+
+            print(string)
 
     
 gellany_stackoverflow().sha256()
