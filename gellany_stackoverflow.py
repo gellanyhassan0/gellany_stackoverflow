@@ -252,7 +252,7 @@ class gellany_stackoverflow():
             
       def palindromic_String(self):
         
-            name = input()   
+            name = self.input  
 
             upper = 0
             lower = 0
@@ -267,6 +267,17 @@ class gellany_stackoverflow():
                 print("YES")
             else :
                 print("NO")
+                
+        def Factorial(self) :
+            
+            n = int(input())
+            fact = 1
+
+            for i in range(1,n+1):
+                fact = fact * i
+
+            print (fact)
+            
 
     
 gellany_stackoverflow().sha256()
