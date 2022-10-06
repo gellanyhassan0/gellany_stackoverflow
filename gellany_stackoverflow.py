@@ -186,23 +186,43 @@ class gellany_stackoverflow():
             
     def score_words(words):
     
-    score = 0
-    arr = ['a', 'e', 'i', 'o', 'u', 'y']
-    #print(words)
-    for word in words:
-         even_word = ""
-         #print(word)
-         for i in word:
-              if i in arr :
-                  even_word +=i
-         if len(even_word) % 2 == 0:
-            #print(even_word)
-            score +=2
-         else:
-            score +=1
-                
-    return score     
+            score = 0
+            arr = ['a', 'e', 'i', 'o', 'u', 'y']
+            #print(words)
+            for word in words:
+                 even_word = ""
+                 #print(word)
+                 for i in word:
+                      if i in arr :
+                          even_word +=i
+                 if len(even_word) % 2 == 0:
+                    #print(even_word)
+                    score +=2
+                 else:
+                    score +=1
+
+            return score     
+        
       
+      def Zoos(self) :
+            name = self.input  
+
+            z = 0
+            o = 0
+
+            for char in name :
+                if char == "z":
+                    z += 1
+                elif char == "o":
+                    o += 1
+
+            #print(z)
+            #print(o)
+
+            if isinstance(name, str) and len(name) <= 20 and o/2 == z:
+                print("Yes")
+            else:
+                print("No")        # Writing output to STDOUT
 
     
 gellany_stackoverflow().sha256()
