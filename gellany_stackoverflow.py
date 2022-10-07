@@ -304,6 +304,11 @@ class gellany_stackoverflow():
                 string = string[:position] + character + string[position+1:]
                 return string
 
+       def captilization_ever_word(self):
+            def solve(s):
+            for i in s.split():
+                s = s.replace(i,i.capitalize())
+            return s
     
 gellany_stackoverflow().sha256()
 gellany_stackoverflow(file = 'text.txt').sha256()
