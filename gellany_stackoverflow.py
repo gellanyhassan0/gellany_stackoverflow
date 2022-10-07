@@ -293,10 +293,10 @@ class gellany_stackoverflow():
             def split_and_join(line):
             return line.replace(" ", "-")
 
-        if __name__ == '__main__':
-            line = input()
-            result = split_and_join(line)
-            print(result)
+       def format_string(self):
+        
+           def print_full_name(first, last):
+               print("Hello {0} {1}! You just delved into python.".format(first,last))
 
     
 gellany_stackoverflow().sha256()
