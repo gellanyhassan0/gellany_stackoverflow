@@ -278,6 +278,17 @@ class gellany_stackoverflow():
 
             print (fact)
             
+        def join(self):
+            
+            def solve (N, ch):
+                return "".join(ch)
+
+            N = int(input())
+            ch = input().split()
+
+            out_ = solve(N, ch)
+            print (out_)
+            
 
     
 gellany_stackoverflow().sha256()
