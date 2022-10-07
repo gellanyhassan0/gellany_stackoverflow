@@ -296,7 +296,13 @@ class gellany_stackoverflow():
        def format_string(self):
         
            def print_full_name(first, last):
-               print("Hello {0} {1}! You just delved into python.".format(first,last))
+                 print("Hello {0} {1}! You just delved into python.".format(first,last))
+            
+       def replace_specifi_position_character(self):
+        
+           def mutate_string(string, position, character):
+                string = string[:position] + character + string[position+1:]
+                return string
 
     
 gellany_stackoverflow().sha256()
