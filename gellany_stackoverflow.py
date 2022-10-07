@@ -288,7 +288,15 @@ class gellany_stackoverflow():
 
             out_ = solve(N, ch)
             print (out_)
-            
+   
+        def string-split-and-join(self):
+            def split_and_join(line):
+            return line.replace(" ", "-")
+
+        if __name__ == '__main__':
+            line = input()
+            result = split_and_join(line)
+            print(result)
 
     
 gellany_stackoverflow().sha256()
